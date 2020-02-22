@@ -1,0 +1,478 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.head {
+    width: 100%;
+    height: 184px;
+    display: initial;
+}
+.logo {
+    display: flex;
+    width: 1140px;
+    height: 131px;
+    margin: 0 200px;
+    padding: 30px 15px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+.logo>img {
+    position: absolute;
+    right: 46%;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 54px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1;
+    
+    
+}
+
+.menu {
+    position: relative;
+    width: 600px;
+    height: 37px;
+}
+.menu>ul {
+    position: absolute;
+    list-style-type: none;
+    left: 60px;
+}
+
+
+.menu>ul li{
+    float: left;
+    font-size: .8rem;
+    padding: 8px 16px 8px 23px;
+}
+.menu>ul li a {
+    text-decoration: none;
+    font-family: 'cinzel';
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: .05rem;
+    font-weight: 400;
+    display: inline-block;
+    text-decoration: none !important;
+    color: #000;
+
+}
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    border-top: 1px solid #efefef;
+}
+
+.cell {
+display: flex;
+height: 904px;
+min-height: 700px;
+width: 1300px;
+position: relative;
+background-image: url(https://colorlib.com/preview/theme/wines/images/hero_1.jpg);
+background-size: cover;
+justify-content: center;
+}
+.cell:before{
+    content:'';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #222;
+    opacity: .3;}
+
+.catalog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    padding-top: 112px;
+    
+}
+
+.welcome {
+    width: 1140px;
+    height: 180px;
+    background-color: bisque;
+}
+.wines {
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1140px;
+    
+}
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 350px;
+    height: 425px;
+    background-color: #fff;
+    margin-left: 15px;
+    margin-bottom: 90px;
+}
+
+
+.box::before {
+    content: '';
+    width: 350px;
+    height: 340px;
+    position: absolute;
+    top: 20%;
+    background: #f3f4f5;
+}
+
+.box a img {
+    position: absolute;
+    width: 350px;
+}
+.box a {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #212529;
+    font-weight: 400;
+
+}
+
+.info-wine{
+    position: absolute;
+    bottom: 40px;
+    left: 20%;
+}
+
+.price {
+    position: absolute;
+    left: 39%;
+    margin-top: 6px;
+    font-family: 'roboto';
+    color: gray;
+    font-weight: 300;
+    font-size: 1rem;
+}
+.wine-action {
+    position: absolute;
+    width: 310px;
+    height: 180px;
+    left: 20px;
+    right: 20px;
+    bottom: 17px;
+    background: #fff;
+    opacity: 0;
+    transition-duration: .3s;
+    font-family: 'roboto';
+    
+}
+
+.wine-action:hover {
+    opacity: 100%;
+}
+
+.h3 {
+    position: absolute;
+    top: 15px;
+    left: 13%;
+    font-weight: 400;
+}
+
+.price-1 {
+    font-size: 20px;
+    color: #930077;
+    font-family: "Cinzel";
+    position: absolute;
+    left: 42%;
+    top: 30%;
+}
+.rating{
+    width: 106px;
+    height: 20px;
+    position: absolute;
+    top: 52%;
+    left: 32%;
+
+}
+
+.fas {
+    color: #ffbd39;
+    font-size: 16px;
+}
+
+.wine-action .btn {
+    width: 150px;
+    height: 48px;
+    background: #930077;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 10px 29px;
+    border-radius: 0;
+    position: absolute;
+    left: 24%;
+    bottom: 6%;
+    transition-duration: .6s;
+}
+
+.wine-action .btn:hover{
+background: #580148;
+}
+
+.poster {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-image: url(https://colorlib.com/preview/theme/wines/images/hero_2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+.poster::before{
+content:'';
+position: absolute;
+height: 100%;
+width: 100%;
+background: #222;
+opacity: .3;
+}
+
+.col {
+    position: absolute;
+    width: 730px;
+    font-family: "Cinzel";
+    color: #fff;
+    font-size: 1.5rem;
+    align-self: center;
+}
+.col h2 {
+    font-size: 5rem;
+    font-weight: 300;
+    color: #fff;
+    font-family: "Montserrat";
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.col span {
+    position: absolute;
+    left: 42%;
+}
+.post1 {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    padding-top: 112px;
+    background-color: #f8f9fa;
+    justify-content: center;
+}
+
+.info {
+    position: relative;
+    margin-left: 10px;
+    width: 350px;
+    height: 441px;
+    
+}
+
+.quote {
+    position: absolute;
+    top: 30%;
+    font-size: 20px;
+    font-family: "Cinzel";
+    text-align: center;
+    
+}
+.small-text {
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    font-family: "Cinzel";
+    text-align: center;
+    color: #930077;
+}
+
+.circle-img img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 135px;
+    border: 4px solid #930077;
+}
+
+.last-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    padding: 112px 0;
+    background-color: #f8f9fa;
+    
+}
+
+.title {
+    width: 1140px;
+    height: 132px;
+    margin-bottom: 50px;
+}
+
+.title h2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    position: relative;
+    font-family: "Cinzel";    
+    margin-bottom: 8px;
+}
+.title-n1 {
+    text-align: center;
+    font-family: 'roboto';
+    margin-bottom: 17px;
+} 
+.title-p {
+    font-family: 'roboto';
+    color: #930077;
+    text-align: center;
+}
+.boxes {
+    display: flex;
+    justify-content: center;
+    
+}
+.cell-n {
+   
+    width: 350px;
+    height: 450px;
+    margin-left: 15px;
+}
+
+.cell-n img {
+    width: 100%;
+}
+
+.cell-n h2 {
+    font-family: "Cinzel";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+    margin: 20px 0;
+}
+.cell-n p {
+    font-family: 'roboto';
+    line-height: 1.7;
+    color: gray;
+    font-weight: 300;
+}
+
+.block{
+    margin-top: 20px;
+}
+
+.block a {
+    color: #000;
+    font-size: .8rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/*page "about" */
+
+.site-section{
+    display: flex;
+    justify-content: center;
+    padding: 48px 0;
+
+}
+.sec2 {
+    background-color: #f8f9fa;
+}
+.sec {width: 540px;
+    height: 360px;
+    margin: 0 50px;
+    padding: 20px 0;
+
+}
+.half-page{
+    width: 445px;
+    height: 360px;
+    
+    margin: 0 50px;
+    padding: 20px 0;
+    
+}
+
+.half-page h2 {
+    font-family: 'cinzel';
+    margin: 20px 0;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.2;
+    padding: 16px 0 20px;
+}
+.half-page p{
+    font-family: 'roboto';
+    line-height: 1.7;
+    color: gray;
+    font-weight: 300;
+    line-height: 1.7rem;
+    margin-bottom: 10px;
+}
+.right {
+    background-image: url(https://colorlib.com/preview/theme/wines/images/hero_1.jpg);
+    background-size: cover;
+}
+
+.left {
+    background-image: url(https://colorlib.com/preview/theme/wines/images/hero_2.jpg);
+    background-size: cover;
+}
+
+.support {
+    width: 100%;
+    height: 265px;
+    
+}
+
+/* contact page */
+
+.contact-form {
+    display: flex;
+    width: 100%;
+    height: 880px;
+    background-color: #f8f9fa;
+    padding: 112px 0;
+    justify-content: center;
+    
+}
+
+.form{
+    display: flex;
+    left: 13%;
+    width: 1140px;
+    height: 880px;
+    background-color: antiquewhite;
+    
+}
