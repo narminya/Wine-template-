@@ -524,7 +524,7 @@ box-sizing: border-box;
 .msg {
     width: 100%;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 0px;
 }
 .textarea{
     resize: vertical;
@@ -555,7 +555,7 @@ box-sizing: border-box;
 
 .area {
     height: 240px;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
 
 .btn-contact {
