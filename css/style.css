@@ -100,7 +100,7 @@ justify-content: center;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     padding-top: 112px;
     
 }
@@ -459,7 +459,7 @@ opacity: .3;
 /* contact page */
 .contact {
     width: 100%;
-    height: auto;
+    height: 100vh;
     background-color: #f8f9fa;
 }
 
@@ -537,3 +537,47 @@ transition-duration: .6s;
 box-shadow: 0 0 0 0.2rem rgba(147, 0, 119, 0.5);
 }
 
+footer {
+    padding: 7rem 0;
+}
+ .social-icons{
+    text-align: center;
+    margin-bottom: 20px;
+ }
+.social-icons a{
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #930077;
+    color: #fff;
+    top: 0;
+    transition: .3s all ease;
+}
+.social-icons a:hover{
+    background: #000;
+    color: #fff;
+    top: -5px;}
+
+.social-icons i {
+    position: absolute;
+    left: 13px;
+    top: 12px;
+   
+}
+
+.fa-heart {
+    color: crimson;
+}
+
+.p-last {
+    text-align: center;
+    font-family: 'roboto';
+    color: darkgray;
+
+}
+
+.p-last a {
+  text-decoration: none;
+}
