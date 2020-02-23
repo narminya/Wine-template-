@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700|Montserrat:400,700|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700|Montserrat:400,700|Roboto&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/2225861a13.js" crossorigin="anonymous"></script>
 
 </head>
+
 <body>
     <header class="head">
         <div class="logo">
@@ -34,25 +37,36 @@
         </div>
     </div>
     <div class="contact">
-    <div class="container-contact">
-       <p>contact us</p>
-       <div class="login">
-           
-           <input type="text" name="NAME" placeholder="Your name" class="input ">
-        </label>
-           <input type="text" name="SURNAME" placeholder="Your surname" class="input surname">
-       </div>
-       <div class="subject">
-           <input type="email" name="email" placeholder="email addres" class="input">
-           <input type="text" name="tel.number" placeholder="number" class="input tel">
-       </div>
-       <div class="msg">
-           <textarea class="area" placeholder="leave a message"></textarea>
-       </div>
-       <div class="submit">
-           <a href="" class="btn-contact">Send message</a>
-       </div>
-   </div>
-</div>
+        <div class="form-title"><p>contact us</p></div>
+        <div class="container-contact">
+            <div class="form">
+                <label for="">FIRST NAME</label>
+                <input type="text" name="NAME" id="name" class="input ">
+            </div>
+            <div class="form">
+                <label for="">SURNAME</label>
+                <input type="text" name="NAME" id="surname" class="input ">
+            </div>
+            <div class="form">
+                <label for="">EMAIL</label>
+                <input type="text" name="NAME" id="email" class="input">
+            </div>
+
+            <div class="form">
+                <label for="">TEL.NUMBER</label>
+                <input type="text" name="NAME" id="tel.number" class="input ">
+            </div>
+
+            <div class="msg">
+                <label for="msg">LEAVE A MESSAGE</label>
+                <textarea class="area" id="msg"></textarea>
+            </div>
+
+            <div class="submit">
+                <a href="" class="btn-contact">Send message</a>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

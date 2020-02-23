@@ -463,16 +463,36 @@ opacity: .3;
     background-color: #f8f9fa;
 }
 
-.container-contact {
+.container-contact { 
+    display: flex;
+    flex-wrap: wrap;
     font-family: 'roboto';
     max-width: 1140px;
     height: auto;
-    margin: 50px auto;
-    padding: 40px;
-    
+    margin: 0 auto;
 }
 
-.container-contact p{
+.form-title {
+    padding: 50px;
+    margin: 0 110px;
+}
+
+.form {
+    width: 50%;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.msg {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.textarea{
+    resize: vertical;
+}
+.contact p{
     font-family: 'cinzel';
     font-size: 32px;
     margin-bottom: 20px;
@@ -501,11 +521,6 @@ opacity: .3;
     margin-bottom: 50px;
 }
 
-.login,.subject  {
-    display: flex;
-    width: 1140px;
-} 
-
 .btn-contact {
 width: 150px;
 height: 70px;
@@ -521,7 +536,4 @@ transition-duration: .6s;
 
 box-shadow: 0 0 0 0.2rem rgba(147, 0, 119, 0.5);
 }
-.surname, .tel {
-margin-left: 20px;
 
-}
